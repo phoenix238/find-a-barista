@@ -20,7 +20,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "users_phoenixtanner_projects_find_a_barista_app",
-      "community": 6,
+      "community": 10,
       "norm_label": "$()"
     },
     {
@@ -230,7 +230,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "app_profile",
-      "community": 6,
+      "community": 10,
       "norm_label": "profile()"
     },
     {
@@ -370,7 +370,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "profiles_profilelist",
-      "community": 7,
+      "community": 9,
       "norm_label": "profilelist()"
     },
     {
@@ -390,7 +390,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "profiles_findprofile",
-      "community": 7,
+      "community": 9,
       "norm_label": "findprofile()"
     },
     {
@@ -410,7 +410,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "profiles_profileavatar",
-      "community": 10,
+      "community": 3,
       "norm_label": "profileavatar()"
     },
     {
@@ -420,7 +420,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "profiles_ratingtext",
-      "community": 10,
+      "community": 3,
       "norm_label": "ratingtext()"
     },
     {
@@ -430,7 +430,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "profiles_profilecard",
-      "community": 10,
+      "community": 3,
       "norm_label": "profilecard()"
     },
     {
@@ -524,10 +524,20 @@
       "norm_label": "connectionscard()"
     },
     {
-      "label": "showProfileInvite()",
+      "label": "refreshConnections()",
       "file_type": "code",
       "source_file": "profiles.js",
       "source_location": "L53",
+      "_origin": "ast",
+      "id": "profiles_refreshconnections",
+      "community": 10,
+      "norm_label": "refreshconnections()"
+    },
+    {
+      "label": "showProfileInvite()",
+      "file_type": "code",
+      "source_file": "profiles.js",
+      "source_location": "L54",
       "_origin": "ast",
       "id": "profiles_showprofileinvite",
       "community": 7,
@@ -537,7 +547,7 @@
       "label": "readProfileImage()",
       "file_type": "code",
       "source_file": "profiles.js",
-      "source_location": "L54",
+      "source_location": "L55",
       "_origin": "ast",
       "id": "profiles_readprofileimage",
       "community": 3,
@@ -547,7 +557,7 @@
       "label": "persistProfileState()",
       "file_type": "code",
       "source_file": "profiles.js",
-      "source_location": "L55",
+      "source_location": "L56",
       "_origin": "ast",
       "id": "profiles_persistprofilestate",
       "community": 6,
@@ -557,7 +567,7 @@
       "label": "invitationsCard()",
       "file_type": "code",
       "source_file": "profiles.js",
-      "source_location": "L89",
+      "source_location": "L90",
       "_origin": "ast",
       "id": "profiles_invitationscard",
       "community": 8,
@@ -567,7 +577,7 @@
       "label": "calendarEntries()",
       "file_type": "code",
       "source_file": "profiles.js",
-      "source_location": "L90",
+      "source_location": "L91",
       "_origin": "ast",
       "id": "profiles_calendarentries",
       "community": 3,
@@ -577,7 +587,7 @@
       "label": "renderCalendarPreview()",
       "file_type": "code",
       "source_file": "profiles.js",
-      "source_location": "L91",
+      "source_location": "L92",
       "_origin": "ast",
       "id": "profiles_rendercalendarpreview",
       "community": 3,
@@ -1012,6 +1022,17 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "profiles.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "profiles_refreshconnections",
+      "target": "users_phoenixtanner_projects_find_a_barista_app"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app.js",
       "source_location": "L48",
@@ -1028,6 +1049,17 @@
       "source_location": "L56",
       "weight": 1.0,
       "source": "app_invoice",
+      "target": "app_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "app_post",
       "target": "app_escapehtml",
       "confidence_score": 1.0
     },
@@ -1114,7 +1146,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "profiles.js",
-      "source_location": "L53",
+      "source_location": "L54",
       "weight": 1.0,
       "source": "profiles_showprofileinvite",
       "target": "app_escapehtml"
@@ -1224,7 +1256,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "profiles.js",
-      "source_location": "L55",
+      "source_location": "L56",
       "weight": 1.0,
       "source": "profiles_persistprofilestate",
       "target": "app_toast"
@@ -1301,7 +1333,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "profiles.js",
-      "source_location": "L53",
+      "source_location": "L54",
       "weight": 1.0,
       "source": "profiles_showprofileinvite",
       "target": "app_modal"
@@ -1367,7 +1399,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "profiles.js",
-      "source_location": "L53",
+      "source_location": "L54",
       "weight": 1.0,
       "source": "profiles_showprofileinvite",
       "target": "app_allshifts"
@@ -1562,7 +1594,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "profiles.js",
-      "source_location": "L90",
+      "source_location": "L91",
       "weight": 1.0,
       "source": "profiles",
       "target": "profiles_calendarentries",
@@ -1612,7 +1644,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "profiles.js",
-      "source_location": "L89",
+      "source_location": "L90",
       "weight": 1.0,
       "source": "profiles",
       "target": "profiles_invitationscard",
@@ -1652,7 +1684,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "profiles.js",
-      "source_location": "L55",
+      "source_location": "L56",
       "weight": 1.0,
       "source": "profiles",
       "target": "profiles_persistprofilestate",
@@ -1712,7 +1744,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "profiles.js",
-      "source_location": "L54",
+      "source_location": "L55",
       "weight": 1.0,
       "source": "profiles",
       "target": "profiles_readprofileimage",
@@ -1722,7 +1754,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "profiles.js",
-      "source_location": "L91",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "profiles",
+      "target": "profiles_refreshconnections",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "profiles.js",
+      "source_location": "L92",
       "weight": 1.0,
       "source": "profiles",
       "target": "profiles_rendercalendarpreview",
@@ -1802,7 +1844,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "profiles.js",
-      "source_location": "L53",
+      "source_location": "L54",
       "weight": 1.0,
       "source": "profiles",
       "target": "profiles_showprofileinvite",
@@ -1846,7 +1888,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "profiles.js",
-      "source_location": "L53",
+      "source_location": "L54",
       "weight": 1.0,
       "source": "profiles_showprofileinvite",
       "target": "profiles_findprofile",
@@ -1912,7 +1954,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "profiles.js",
-      "source_location": "L89",
+      "source_location": "L90",
       "weight": 1.0,
       "source": "profiles_invitationscard",
       "target": "profiles_sectioncard",
@@ -2011,7 +2053,18 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "profiles.js",
-      "source_location": "L91",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "profiles_refreshconnections",
+      "target": "profiles_connectionscard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "profiles.js",
+      "source_location": "L92",
       "weight": 1.0,
       "source": "profiles_rendercalendarpreview",
       "target": "profiles_calendarentries",
@@ -2089,5 +2142,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "53f141a1d3230c8f17ef138d83faacfe28cd2201"
+  "built_at_commit": "32f892c6ef71ba06d4a3eed14d9a238764688cd2"
 }
