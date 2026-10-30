@@ -21,6 +21,7 @@ GitHub Actions publishes the demo to GitHub Pages when changes reach `main`.
 - Hide sample profiles/cafés while retaining existing booking records.
 - Read the community promise and browse sample permanent vacancies.
 - Browse searchable barista and café directories and dedicated profile pages.
+- Switch between persistent Barista and Café modes in the header. Each mode opens its own profile (or a create-profile prompt), with relevant navigation and booking actions. Profile editing is separate from viewing your own profile. Mode selection is a device-local demo preference, not an authorization boundary.
 - Create and edit device-local barista and café profiles, with photos, links and contact visibility choices. Café profiles support multiple locations and managers; baristas have equipment, skills, languages and travel preferences.
 - Preview separate Google sign-in and Google Calendar connections, both explicitly simulated. No OAuth request is made and no Google credentials or account data are collected.
 - See approved bookings in a simulated calendar; pending and cancelled shifts stay off it. Invitations can be accepted or declined in the demo workspace.
