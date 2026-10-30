@@ -20,6 +20,12 @@ GitHub Actions publishes the demo to GitHub Pages when changes reach `main`.
 - Simulate café cancellation compensation and overdue invoice posting restrictions.
 - Hide sample profiles/cafés while retaining existing booking records.
 - Read the community promise and browse sample permanent vacancies.
+- Browse searchable barista and café directories and dedicated profile pages.
+- Create and edit device-local barista and café profiles, with photos, links and contact visibility choices. Café profiles support multiple locations and managers; baristas have equipment, skills, languages and travel preferences.
+- Preview separate Google sign-in and Google Calendar connections, both explicitly simulated. No OAuth request is made and no Google credentials or account data are collected.
+- See approved bookings in a simulated calendar; pending and cancelled shifts stay off it. Invitations can be accepted or declined in the demo workspace.
+
+Profile uploads are optional JPG/PNG/WebP images, at most 500 KB each and three gallery photos. They stay in local browser storage. CVs are optional HTTPS links, not file uploads. Social links are self-provided and never labelled verified. Demo reviews are fictional, and newly created profiles start with no ratings. Reports are saved locally without notifying anyone. Profile routes are device-local examples, not shareable user accounts.
 
 ## Agreed service rules
 

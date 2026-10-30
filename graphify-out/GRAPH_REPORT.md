@@ -1,16 +1,16 @@
 # Graph Report - find-a-barista  (2026-10-30)
 
 ## Corpus Check
-- 2 files · ~3,090 words
+- 3 files · ~5,228 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 40 nodes · 77 edges · 7 communities
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
+- 66 nodes · 135 edges · 12 communities (11 shown, 1 thin omitted)
+- Extraction: 87% EXTRACTED · 13% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7aa2f30f`
+- Built from commit: `53f141a1`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -22,74 +22,104 @@
 - [[_COMMUNITY_Community 4|Community 4]]
 - [[_COMMUNITY_Community 5|Community 5]]
 - [[_COMMUNITY_Community 6|Community 6]]
+- [[_COMMUNITY_Community 7|Community 7]]
+- [[_COMMUNITY_Community 8|Community 8]]
+- [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Community 10|Community 10]]
+- [[_COMMUNITY_Community 11|Community 11]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `modal()` - 10 edges
-2. `invoice()` - 8 edges
-3. `showShift()` - 7 edges
-4. `FAB — Find a Barista ✳` - 7 edges
-5. `render()` - 6 edges
-6. `escapeHTML()` - 5 edges
-7. `getShift()` - 5 edges
-8. `apply()` - 5 edges
-9. `$()` - 4 edges
-10. `formatDate()` - 4 edges
+1. `escapeHTML()` - 11 edges
+2. `renderFullProfile()` - 10 edges
+3. `modal()` - 9 edges
+4. `render()` - 9 edges
+5. `showShift()` - 8 edges
+6. `invoice()` - 8 edges
+7. `renderProfileWorkspace()` - 7 edges
+8. `FAB — Find a Barista ✳` - 7 edges
+9. `showProfileInvite()` - 6 edges
+10. `$()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `filterShifts()` --calls--> `$()`  [EXTRACTED]
-  app.js → app.js  _Bridges community 6 → community 5_
-- `modal()` --calls--> `$()`  [EXTRACTED]
-  app.js → app.js  _Bridges community 6 → community 3_
-- `invoice()` --calls--> `dateIn()`  [EXTRACTED]
-  app.js → app.js  _Bridges community 3 → community 0_
-- `apply()` --calls--> `toast()`  [EXTRACTED]
-  app.js → app.js  _Bridges community 6 → community 0_
-- `invite()` --calls--> `modal()`  [EXTRACTED]
-  app.js → app.js  _Bridges community 3 → community 5_
+- `render()` --calls--> `renderPeopleDirectory()`  [INFERRED]
+  app.js → profiles.js
+- `inputField()` --calls--> `escapeHTML()`  [INFERRED]
+  profiles.js → app.js
+- `profileAvatar()` --calls--> `escapeHTML()`  [INFERRED]
+  profiles.js → app.js
+- `profileCard()` --calls--> `escapeHTML()`  [INFERRED]
+  profiles.js → app.js
+- `renderFullProfile()` --calls--> `escapeHTML()`  [INFERRED]
+  profiles.js → app.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (7 total, 0 thin omitted)
+## Communities (12 total, 1 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.36
-Nodes (10): apply(), escapeHTML(), formatDate(), getShift(), hours(), invoice(), pounds(), shiftCard() (+2 more)
+Cohesion: 0.27
+Nodes (14): apply(), dateIn(), escapeHTML(), formatDate(), getShift(), hours(), invoice(), modal() (+6 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.25
 Nodes (7): Agreed service rules, Community, Explore, FAB — Find a Barista ✳, Licence, Run locally, What needs a backend before real use
 
 ### Community 2 - "Community 2"
-Cohesion: 0.40
-Nodes (4): baristas, initialShifts, main, now
+Cohesion: 0.33
+Nodes (5): baristas, cancellation(), initialShifts, main, now
 
 ### Community 3 - "Community 3"
-Cohesion: 0.40
-Nodes (5): cancellation(), dateIn(), modal(), post(), profile()
+Cohesion: 0.25
+Nodes (6): calendarEntries(), LONDON_AREAS, renderCalendarPreview(), renderPeopleDirectory(), SAMPLE_CAFE_DETAILS, sampleReviews
 
 ### Community 4 - "Community 4"
-Cohesion: 0.40
-Nodes (5): render(), renderBaristas(), renderBookings(), renderCommunity(), renderPermanent()
+Cohesion: 0.50
+Nodes (4): render(), renderBookings(), renderCommunity(), renderPermanent()
 
 ### Community 5 - "Community 5"
-Cohesion: 0.50
-Nodes (4): allShifts(), filterShifts(), invite(), renderShifts()
+Cohesion: 0.67
+Nodes (3): allShifts(), filterShifts(), renderShifts()
 
 ### Community 6 - "Community 6"
+Cohesion: 0.40
+Nodes (5): profile(), save(), toast(), persistProfileState(), $()
+
+### Community 7 - "Community 7"
+Cohesion: 0.50
+Nodes (4): invite(), findProfile(), profileList(), showProfileInvite()
+
+### Community 8 - "Community 8"
+Cohesion: 0.83
+Nodes (4): connectionsCard(), invitationsCard(), renderProfileWorkspace(), sectionCard()
+
+### Community 9 - "Community 9"
+Cohesion: 0.50
+Nodes (4): galleryMarkup(), isHidden(), profileLinks(), renderFullProfile()
+
+### Community 10 - "Community 10"
 Cohesion: 0.67
-Nodes (3): save(), toast(), $()
+Nodes (3): profileAvatar(), profileCard(), ratingText()
 
 ## Knowledge Gaps
-- **10 isolated node(s):** `now`, `initialShifts`, `baristas`, `main`, `Run locally` (+5 more)
+- **13 isolated node(s):** `now`, `initialShifts`, `baristas`, `main`, `LONDON_AREAS` (+8 more)
   These have ≤1 connection - possible missing edges or undocumented components.
+- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `modal()` connect `Community 3` to `Community 0`, `Community 2`, `Community 5`, `Community 6`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
-- **Why does `invoice()` connect `Community 0` to `Community 2`, `Community 3`?**
-  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **Why does `escapeHTML()` connect `Community 0` to `Community 2`, `Community 7`, `Community 8`, `Community 9`, `Community 10`, `Community 11`?**
+  _High betweenness centrality (0.118) - this node is a cross-community bridge._
+- **Why does `render()` connect `Community 4` to `Community 2`, `Community 3`, `Community 5`, `Community 8`, `Community 9`?**
+  _High betweenness centrality (0.096) - this node is a cross-community bridge._
+- **Why does `renderFullProfile()` connect `Community 9` to `Community 0`, `Community 3`, `Community 4`, `Community 5`, `Community 7`, `Community 8`, `Community 10`?**
+  _High betweenness centrality (0.073) - this node is a cross-community bridge._
+- **Are the 6 inferred relationships involving `escapeHTML()` (e.g. with `inputField()` and `profileAvatar()`) actually correct?**
+  _`escapeHTML()` has 6 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 3 inferred relationships involving `renderFullProfile()` (e.g. with `render()` and `allShifts()`) actually correct?**
+  _`renderFullProfile()` has 3 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 4 inferred relationships involving `render()` (e.g. with `renderCalendarPreview()` and `renderFullProfile()`) actually correct?**
+  _`render()` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `now`, `initialShifts`, `baristas` to the rest of the system?**
-  _10 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _13 weakly-connected nodes found - possible documentation gaps or missing edges._
