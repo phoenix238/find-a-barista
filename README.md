@@ -1,0 +1,46 @@
+# FAB — Find a Barista ✳
+
+An open-source, community-first project connecting London's freelance baristas with independent coffee shops and event cafés.
+
+**This repository currently contains a static concept demo, not a live marketplace.** All people and initial listings are fictional. Interactions are simulated and saved only in the visitor's browser. Do not enter personal, financial or sensitive information.
+
+## Run locally
+
+No dependencies or build step. Serve this directory with any static web server, for example `python3 -m http.server 8080`, then open `http://localhost:8080`.
+
+GitHub Actions publishes the demo to GitHub Pages when changes reach `main`.
+
+## Explore
+
+- Search and filter sample shifts by London area and café/event type; sort by date or rate.
+- View sample barista profiles and simulate an invitation.
+- Post a device-local shift with clear café cancellation acceptance.
+- Try manual approval or rating-based automatic booking (three reviewed shifts minimum).
+- Submit worked hours, simulate the 48-hour confirmation window, view/print sample invoices with 14-day payment terms.
+- Simulate café cancellation compensation and overdue invoice posting restrictions.
+- Hide sample profiles/cafés while retaining existing booking records.
+- Read the community promise and browse sample permanent vacancies.
+
+## Agreed service rules
+
+London only initially, 18+. Freelance cover is the primary focus; permanent roles have a separate section with employer application links/email. Cafés choose manual approval or an auto-book rating threshold. New baristas need three reviewed shifts before automatic booking. Invitations require acceptance.
+
+Planned hourly floors: current London Living Wage; £16 within 48 hours, £17 within 24 hours, whichever is higher. **The official current Living Wage has not been verified or integrated.** Demo posting requires at least £16 for all shifts and £17 inside 24 hours. Real launch requires an authoritative, maintained rate source and an admin override.
+
+Café cancellation within 24 hours owes 50% of booked paid hours, and after shift start owes 100%. Barista late cancellations have a separate reliability history. No-show reports show as under review and pause automatic bookings pending admin review. Reviews remain hidden until both submit or seven days pass. Reports must allow evidence and resolution.
+
+Baristas submit actual hours and breaks. Cafés have 48 hours to confirm/dispute before invoicing. Payment is directly to the barista by bank transfer, due 14 days after invoice issue. Reported overdue invoices block café posts until paid or resolved. Blocking is mutually invisible for future opportunities, while existing records/disputes remain accessible. Café businesses may have multiple locations and managers.
+
+## What needs a backend before real use
+
+Authentication and age acceptance, café/business/location roles, durable shared records, secure uploads/CVs, email delivery and privacy controls, authoritative time-zone/rate handling, atomic overlap protection, real invitations, hours disputes and deadlines, scheduled invoicing, valid invoice issuer/tax/bank details, review publication, reliability flags, moderation, mutual blocking, admin controls, overdue evidence and resolution, export/deletion and privacy processes. The demo's role simulations are **not access controls**. The overdue demo flag pauses posting globally on that device; the real service must scope it to the responsible café business.
+
+Distance-from-place search, availability calendars and production background automation are not implemented. Area filters work in the demo. No real email messages or invoices are sent; printing generates a visibly marked sample.
+
+## Community
+
+Be kind, be honest, turn up when you commit, and pay people when you owe them. Raise ideas and feedback in GitHub Issues. No booking fees in this demo. Future infrastructure costs and any proposed café contributions should be published transparently before charges are introduced.
+
+## Licence
+
+AGPL-3.0-or-later. See [LICENSE](LICENSE). Code is open source; this does not grant permission to disclose users' personal information. External fonts are loaded from Google Fonts and are subject to their own licences.
