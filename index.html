@@ -5,23 +5,21 @@
   <meta name="theme-color" content="#254b3b">
   <meta name="description" content="FAB connects London's freelance baristas with independent coffee shops and event cafés. A community-first, open-source project.">
   <title>FAB — Find a Barista</title>
-  <link rel="stylesheet" href="./styles.css?v=review-4">
-  <script src="./experience.js?v=review-4" defer></script>
-  <script src="./profiles.js?v=review-4" defer></script>
-  <script src="./app.js?v=review-4" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=role-audit-1">
+  <script src="./experience.js?v=role-audit-1" defer></script>
+  <script src="./profiles.js?v=role-audit-1" defer></script>
+  <script src="./app.js?v=role-audit-1" defer></script>
 </head>
 <body>
   <div class="demo-strip">A little preview of something better. <span>Demo only · sample people & shifts · nothing is booked</span></div>
   <header class="header">
     <a class="brand" href="#home" aria-label="FAB home">fab<span class="brand-dot">✳</span><small>find a barista</small></a>
-    <nav aria-label="Main navigation">
-      <a href="#shifts" data-nav="shifts">Find a shift</a><a href="#baristas" data-nav="baristas">Find a barista</a><a href="#cafes" data-nav="cafes">Meet the cafés</a><a href="#permanent" data-nav="permanent">Permanent jobs</a><a href="#community" data-nav="community">The idea</a>
-    </nav>
-    <div id="mode-switch" class="mode-switch" role="group" aria-label="Use FAB as"></div>
-    <a class="account-link" href="#my-profile">My barista profile</a>
-    <button class="button dark small" data-action="post">Post a shift <span>↗</span></button>
+    <nav aria-label="Main navigation"><a href="#welcome">Home</a><a href="#community">About FAB</a><a href="#feedback">Give feedback</a></nav>
+    <div id="mode-switch" class="mode-switch" role="group" aria-label="Use FAB as" hidden></div>
+    <a class="account-link" hidden href="#my-profile">My barista profile</a>
+    <button class="button dark small" hidden data-action="post">Post a shift <span>↗</span></button>
   </header>
-  <div id="mode-context" class="mode-context"></div>
+  <div id="mode-context" class="mode-context" hidden></div>
   <main id="main"></main>
   <footer><a class="brand" href="#home">fab<span>✳</span></a><p>Good coffee. Good people. Fair work.<br><span>London first. Community always. 18+.</span></p><div><a href="#community">Our community promise</a><a href="https://github.com/phoenix238/find-a-barista" target="_blank" rel="noopener">Open source ↗</a><a href="#feedback">Give feedback</a><button class="text-button" data-flow="tour">Take a tour</button><button class="text-button" data-action="reset">Reset demo</button></div></footer>
   <dialog id="dialog"><div id="dialog-content"></div></dialog>

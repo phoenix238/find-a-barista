@@ -64,3 +64,6 @@ The booking manager separates requests/invitations from confirmation, hours, inv
 Feedback is the one live collection: an external Google Form, configured for anyone with the link, no automatic email collection, no one-response sign-in restriction and no response-summary sharing. The optional email question is separate from the contact choice. Owner response-email notifications are off. The form owner should access the Responses tab in Google Forms to review feedback. No form responses, interest emails, Google credentials or tokens are stored in this public repository.
 
 Run meaningful demo logic checks with `node --test tests/workspaces.test.cjs`.
+
+
+The public landing page and workspace responsibilities are mapped in [ROLE_AUDIT.md](ROLE_AUDIT.md). Shift search is a compact barista tool; all introduction and role-choice content belongs to the public homepage. Legacy cross-role links do not change mode, and record actions are checked against the active persona. Google/calendar preview settings are separated by role.
