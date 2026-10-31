@@ -15,18 +15,23 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1793443844.9495566,
-    "ast_hash": "08f780ea4dcd7b2c7ff98993518a3325",
+    "mtime": 1793444500.236196,
+    "ast_hash": "5350584aa7541f8e661fb16896c333de",
     "semantic_hash": ""
   },
   "profiles.js": {
-    "mtime": 1793444313.9770522,
-    "ast_hash": "409d734c3c27b856d226dbb69aa19832",
+    "mtime": 1793444500.235754,
+    "ast_hash": "6749dc259e769d0e66fac7102cf6a4b3",
     "semantic_hash": ""
   },
   "experience.js": {
     "mtime": 1793444368.7816107,
     "ast_hash": "d3c8898a36921c7dd960b0e0f83ef502",
+    "semantic_hash": ""
+  },
+  "LOW_COST_PLAN.md": {
+    "mtime": 1793444418.5947106,
+    "ast_hash": "f84fd37a6d07a17fbfd6aefb959d07e9",
     "semantic_hash": ""
   }
 }

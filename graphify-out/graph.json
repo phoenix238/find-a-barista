@@ -30,7 +30,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "app_escapehtml",
-      "community": 11,
+      "community": 0,
       "norm_label": "escapehtml()"
     },
     {
@@ -220,7 +220,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "app_apply",
-      "community": 0,
+      "community": 6,
       "norm_label": "apply()"
     },
     {
@@ -240,7 +240,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "app_invite",
-      "community": 0,
+      "community": 3,
       "norm_label": "invite()"
     },
     {
@@ -280,7 +280,7 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "app_renderbookings",
-      "community": 6,
+      "community": 2,
       "norm_label": "renderbookings()"
     },
     {
@@ -310,7 +310,7 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "app_cancellation",
-      "community": 0,
+      "community": 6,
       "norm_label": "cancellation()"
     },
     {
@@ -450,7 +450,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "experience_locationcard",
-      "community": 11,
+      "community": 2,
       "norm_label": "locationcard()"
     },
     {
@@ -510,7 +510,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "experience_bookingscope",
-      "community": 2,
+      "community": 0,
       "norm_label": "bookingscope()"
     },
     {
@@ -550,7 +550,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "experience_renderbookingdetail",
-      "community": 2,
+      "community": 0,
       "norm_label": "renderbookingdetail()"
     },
     {
@@ -710,7 +710,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "profiles_profilelist",
-      "community": 0,
+      "community": 3,
       "norm_label": "profilelist()"
     },
     {
@@ -730,7 +730,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "profiles_findprofile",
-      "community": 0,
+      "community": 3,
       "norm_label": "findprofile()"
     },
     {
@@ -880,7 +880,7 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "profiles_showprofileinvite",
-      "community": 0,
+      "community": 3,
       "norm_label": "showprofileinvite()"
     },
     {
@@ -910,7 +910,7 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "profiles_invitationscard",
-      "community": 3,
+      "community": 2,
       "norm_label": "invitationscard()"
     },
     {
@@ -920,7 +920,7 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "profiles_calendarentries",
-      "community": 3,
+      "community": 2,
       "norm_label": "calendarentries()"
     },
     {
@@ -930,8 +930,78 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "profiles_rendercalendarpreview",
-      "community": 3,
+      "community": 2,
       "norm_label": "rendercalendarpreview()"
+    },
+    {
+      "label": "LOW_COST_PLAN.md",
+      "file_type": "document",
+      "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "low_cost_plan",
+      "community": 4,
+      "norm_label": "low_cost_plan.md"
+    },
+    {
+      "label": "Keeping FAB inexpensive without weakening trust",
+      "file_type": "document",
+      "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "low_cost_plan_keeping_fab_inexpensive_without_weakening_trust",
+      "community": 4,
+      "norm_label": "keeping fab inexpensive without weakening trust"
+    },
+    {
+      "label": "A small central core, with optional personal storage",
+      "file_type": "document",
+      "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "low_cost_plan_a_small_central_core_with_optional_personal_storage",
+      "community": 4,
+      "norm_label": "a small central core, with optional personal storage"
+    },
+    {
+      "label": "Keep large files out of the core",
+      "file_type": "document",
+      "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "low_cost_plan_keep_large_files_out_of_the_core",
+      "community": 4,
+      "norm_label": "keep large files out of the core"
+    },
+    {
+      "label": "Start with fewer paid services",
+      "file_type": "document",
+      "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "low_cost_plan_start_with_fewer_paid_services",
+      "community": 4,
+      "norm_label": "start with fewer paid services"
+    },
+    {
+      "label": "Identity is separate from experience",
+      "file_type": "document",
+      "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "low_cost_plan_identity_is_separate_from_experience",
+      "community": 4,
+      "norm_label": "identity is separate from experience"
+    },
+    {
+      "label": "Feedback ownership",
+      "file_type": "document",
+      "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "low_cost_plan_feedback_ownership",
+      "community": 4,
+      "norm_label": "feedback ownership"
     },
     {
       "label": "README.md",
@@ -3699,6 +3769,66 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "low_cost_plan",
+      "target": "low_cost_plan_keeping_fab_inexpensive_without_weakening_trust",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "low_cost_plan_keeping_fab_inexpensive_without_weakening_trust",
+      "target": "low_cost_plan_a_small_central_core_with_optional_personal_storage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "low_cost_plan_keeping_fab_inexpensive_without_weakening_trust",
+      "target": "low_cost_plan_feedback_ownership",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "low_cost_plan_keeping_fab_inexpensive_without_weakening_trust",
+      "target": "low_cost_plan_identity_is_separate_from_experience",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "low_cost_plan_keeping_fab_inexpensive_without_weakening_trust",
+      "target": "low_cost_plan_keep_large_files_out_of_the_core",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "low_cost_plan_keeping_fab_inexpensive_without_weakening_trust",
+      "target": "low_cost_plan_start_with_fewer_paid_services",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -3778,5 +3908,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "cb6a32b8fd33595e87075b85d4dde18140405c96"
+  "built_at_commit": "b952b5ae2a7ecbc965a2528525e5c04cea83ed2f"
 }
