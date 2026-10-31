@@ -31,7 +31,7 @@ const main=$('#main');
 function toast(message){$('#toast').textContent=message;$('#toast').classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').classList.remove('visible'),4500);}
 function modal(title,body){$('#dialog-content').innerHTML=`<div class="dialog-body"><div class="dialog-header"><h2>${title}</h2><button class="close" data-action="close" aria-label="Close dialog">×</button></div>${body}</div>`;if(!$('#dialog').open)$('#dialog').showModal();}
 function hours(s){return Math.max(0,(Number(s.end.slice(0,2))*60+Number(s.end.slice(3)) - Number(s.start.slice(0,2))*60-Number(s.start.slice(3))-Number(s.break))/60);}
-function allShifts(){return [...state.shifts,...initialShifts].filter(s=>!state.blocked.includes(s.cafe));}
+function allShifts(){return [...state.shifts,...initialShifts].filter(s=>!state.blocked.includes(s.cafe)&&!shiftHasConfirmedBooking(s.id));}
 function getShift(id){return [...state.shifts,...initialShifts].find(s=>s.id===id);}
 function render(){
  const route=(location.hash.slice(1)||'welcome').split('/');
