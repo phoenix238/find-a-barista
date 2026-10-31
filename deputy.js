@@ -1,7 +1,7 @@
 /* Deputy demonstration only. No network calls, tokens, OAuth or real rota changes. */
 'use strict';
 function deputyState(){return state.deputy||(state.deputy={connected:false});}
-function deputySamples(){return [{id:'deputy-demo-101',title:'Morning espresso cover',area:'Sample Deputy area A',date:dateIn(3),start:'07:30',end:'14:30',break:30,rate:18},{id:'deputy-demo-102',title:'Weekend café cover',area:'Sample Deputy area B',date:dateIn(5),start:'09:00',end:'16:00',break:30,rate:19},{id:'deputy-demo-103',title:'Event coffee service',area:'Sample Deputy event area',date:dateIn(7),start:'10:00',end:'15:00',break:0,rate:20}];}
+function deputySamples(){return [{id:'deputy-demo-101',title:'Morning espresso cover',area:'Sample Deputy area A',date:dateIn(3),start:'07:30',end:'14:30',break:30,rate:18},{id:'deputy-demo-102',title:'Daytime café cover',area:'Sample Deputy area B',date:dateIn(5),start:'09:00',end:'16:00',break:30,rate:19},{id:'deputy-demo-103',title:'Event coffee service',area:'Sample Deputy event area',date:dateIn(7),start:'10:00',end:'15:00',break:0,rate:20}];}
 function importedDeputyShift(sourceId){return ownCafeShifts().find(s=>s.deputySourceId===sourceId);}
 function deputyRosterPreview(s){
  if(!deputyState().connected)return {label:'Preview paused',detail:'Reconnect the demo to see its simulated rota state.'};
