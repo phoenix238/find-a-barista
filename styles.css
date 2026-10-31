@@ -19,7 +19,9 @@ body[data-area=public] .header nav{margin-left:auto}body[data-area=public] .head
  .workspace-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.workspace-stat-grid a{padding:17px}.workspace-stat-grid strong{font-size:28px}.own-location-grid{grid-template-columns:minmax(0,1fr)}.location-summary{padding:20px;min-width:0}
  .directory-head,.section-heading{flex-wrap:wrap;align-items:flex-start}.directory-head>.button{width:100%}.page-head h1{overflow-wrap:anywhere}.count{gap:12px;flex-wrap:wrap}.filters{gap:10px}.filters select{width:100%;flex-basis:100%}
  .booking-card{align-items:flex-start;flex-direction:column}.booking-card>.button{width:100%}.booking-filters{gap:8px}.booking-filters button{min-height:44px}.booking-stepper{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.booking-stepper li{min-width:0}.booking-actions>.button{width:100%}
- .dialog-body{padding:20px}dialog{max-height:90dvh}.tour-dialog{max-height:65dvh;overflow-y:auto}.deputy-summary{padding:20px;margin-top:32px}.deputy-summary .button,.deputy-connection .button{white-space:normal;width:100%}
+ .dialog-body{padding:20px}dialog{max-height:90dvh}#tour-dialog{max-height:65dvh;overflow-y:auto}.deputy-summary{padding:20px;margin-top:32px}.deputy-summary .button,.deputy-connection .button{white-space:normal;width:100%}
  footer>div{gap:12px}footer a,footer button{min-height:44px;display:inline-flex;align-items:center}#toast{bottom:max(18px,env(safe-area-inset-bottom));width:max-content}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+@media(max-width:600px){.profile-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.profile-gallery>div{min-width:0;overflow-wrap:anywhere}.card-bottom button{min-height:44px}.header .account-link{min-height:44px;display:inline-flex;align-items:center}}
