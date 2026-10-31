@@ -100,7 +100,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "app_save",
-      "community": 11,
+      "community": 6,
       "norm_label": "save()"
     },
     {
@@ -120,7 +120,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "app_toast",
-      "community": 11,
+      "community": 6,
       "norm_label": "toast()"
     },
     {
@@ -240,7 +240,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "app_invite",
-      "community": 11,
+      "community": 3,
       "norm_label": "invite()"
     },
     {
@@ -270,7 +270,7 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "app_post",
-      "community": 11,
+      "community": 5,
       "norm_label": "post()"
     },
     {
@@ -280,7 +280,7 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "app_renderbookings",
-      "community": 6,
+      "community": 2,
       "norm_label": "renderbookings()"
     },
     {
@@ -480,7 +480,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "experience_currentmonth",
-      "community": 11,
+      "community": 2,
       "norm_label": "currentmonth()"
     },
     {
@@ -520,7 +520,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "experience_ensuredemoworkspace",
-      "community": 11,
+      "community": 2,
       "norm_label": "ensuredemoworkspace()"
     },
     {
@@ -540,7 +540,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "experience_owncafeshifts",
-      "community": 2,
+      "community": 5,
       "norm_label": "owncafeshifts()"
     },
     {
@@ -550,7 +550,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "experience_visiblebookings",
-      "community": 2,
+      "community": 5,
       "norm_label": "visiblebookings()"
     },
     {
@@ -600,7 +600,7 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "experience_rendercafedashboard",
-      "community": 2,
+      "community": 5,
       "norm_label": "rendercafedashboard()"
     },
     {
@@ -630,7 +630,7 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "experience_renderlocationprofile",
-      "community": 2,
+      "community": 5,
       "norm_label": "renderlocationprofile()"
     },
     {
@@ -640,7 +640,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "experience_showownshiftform",
-      "community": 11,
+      "community": 5,
       "norm_label": "showownshiftform()"
     },
     {
@@ -670,7 +670,7 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "experience_bookingscope",
-      "community": 2,
+      "community": 0,
       "norm_label": "bookingscope()"
     },
     {
@@ -990,7 +990,7 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "profiles_inputfield",
-      "community": 3,
+      "community": 5,
       "norm_label": "inputfield()"
     },
     {
@@ -1000,7 +1000,7 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "profiles_locationfields",
-      "community": 3,
+      "community": 5,
       "norm_label": "locationfields()"
     },
     {
@@ -1030,7 +1030,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "profiles_refreshconnections",
-      "community": 6,
+      "community": 3,
       "norm_label": "refreshconnections()"
     },
     {
@@ -1040,7 +1040,7 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "profiles_showprofileinvite",
-      "community": 11,
+      "community": 3,
       "norm_label": "showprofileinvite()"
     },
     {
@@ -1060,7 +1060,7 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "profiles_persistprofilestate",
-      "community": 11,
+      "community": 6,
       "norm_label": "persistprofilestate()"
     },
     {
@@ -1070,7 +1070,7 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "profiles_invitationscard",
-      "community": 3,
+      "community": 2,
       "norm_label": "invitationscard()"
     },
     {
@@ -1162,6 +1162,16 @@
       "id": "low_cost_plan_feedback_ownership",
       "community": 4,
       "norm_label": "feedback ownership"
+    },
+    {
+      "label": "Proposed community contribution and future cost sharing",
+      "file_type": "document",
+      "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "low_cost_plan_proposed_community_contribution_and_future_cost_sharing",
+      "community": 4,
+      "norm_label": "proposed community contribution and future cost sharing"
     },
     {
       "label": "README.md",
@@ -4468,6 +4478,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "LOW_COST_PLAN.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "low_cost_plan_keeping_fab_inexpensive_without_weakening_trust",
+      "target": "low_cost_plan_proposed_community_contribution_and_future_cost_sharing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LOW_COST_PLAN.md",
       "source_location": "L21",
       "weight": 1.0,
       "source": "low_cost_plan_keeping_fab_inexpensive_without_weakening_trust",
@@ -4586,5 +4606,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "15346db6db61364ed2ddfb6d906177847e1b10bd"
+  "built_at_commit": "92c314ea319a20a20c0e5fab9c48365d9e98b1cd"
 }

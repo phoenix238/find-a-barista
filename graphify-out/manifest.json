@@ -1,7 +1,7 @@
 {
   "app.js": {
-    "mtime": 1793450298.1842978,
-    "ast_hash": "5283d08fb22438decdd091bb0f9de15c",
+    "mtime": 1793450593.8313026,
+    "ast_hash": "aafaf43b8688dce7b936f1055cbc15ad",
     "semantic_hash": ""
   },
   ".github/workflows/pages.yml": {
@@ -15,8 +15,8 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1793450379.2617846,
-    "ast_hash": "e92de3b3fa2a9d7837df6a179933c12b",
+    "mtime": 1793450593.8321197,
+    "ast_hash": "0441bb3105548df6b45702ea1332d9d0",
     "semantic_hash": ""
   },
   "profiles.js": {
@@ -30,8 +30,8 @@
     "semantic_hash": ""
   },
   "LOW_COST_PLAN.md": {
-    "mtime": 1793444418.5947106,
-    "ast_hash": "f84fd37a6d07a17fbfd6aefb959d07e9",
+    "mtime": 1793450593.8317206,
+    "ast_hash": "d811354e00bc64f67d25134884a2621e",
     "semantic_hash": ""
   },
   "ROLE_AUDIT.md": {

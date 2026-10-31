@@ -29,3 +29,9 @@ Google sign-in is the intended future account entry, but it is not implemented h
 ## Feedback ownership
 
 The feedback Form has optional email and a separate contact choice. Response summaries and owner email notifications are off, and editor access should stay restricted. Responses are real personal information if an email is supplied. Review them through Google Forms' Responses tab; do not commit exports to this repository. Delete old feedback/contact data when no longer needed, and keep launch contact limited to people who opted in.
+
+## Proposed community contribution and future cost sharing
+
+Community members would contribute time through occasional private dispute reviews. Eligible reviewers would be randomly selected, screened for conflicts, and given relevant information from both sides. Decisions would include reasons, with appeals and sensitive cases handled by the creator. Panel size, voting thresholds, deadlines, privacy controls and participation expectations remain undecided; none of this is implemented in the demo.
+
+If free hosting is outgrown, the creator could front the bill and invoice cafés for their proportional share of published actual hosting costs. Completed bookings per billing period are an example usage measure, not a settled billing rule. The metric, period and limits must be communicated before charges begin. Barista pay would not be reduced by a percentage commission. Demo use and feedback create no payment commitment.
