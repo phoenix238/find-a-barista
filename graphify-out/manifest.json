@@ -1,7 +1,7 @@
 {
   "app.js": {
-    "mtime": 1793450593.8313026,
-    "ast_hash": "aafaf43b8688dce7b936f1055cbc15ad",
+    "mtime": 1793450637.4181788,
+    "ast_hash": "4130085f80582ee5a4d3c0f1ca1b0e38",
     "semantic_hash": ""
   },
   ".github/workflows/pages.yml": {
@@ -15,8 +15,8 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1793450593.8321197,
-    "ast_hash": "0441bb3105548df6b45702ea1332d9d0",
+    "mtime": 1793450637.4185276,
+    "ast_hash": "3608517def20316fc1de2f974a940f90",
     "semantic_hash": ""
   },
   "profiles.js": {
