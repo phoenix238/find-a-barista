@@ -8,6 +8,7 @@ The site has one public homepage. The public homepage introduces FAB and offers 
 | Find cover shifts / apply | — | Search, inspect, request | — |
 | Employer and branch profile | — | Read from relevant shift | Own business and branches only |
 | Find baristas / invite | — | — | Browse people; invite to own open shifts |
+| Deputy import / mock rota | — | — | Own business simulation only |
 | Post shifts | — | — | Own locations only |
 | Applications / bookings | — | Own work only | Own business only |
 | Confirm / decline applicants | — | Labelled other-party demo helper only | Own applications, with terms acceptance |

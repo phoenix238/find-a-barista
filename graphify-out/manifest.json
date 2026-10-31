@@ -1,22 +1,22 @@
 {
   "app.js": {
-    "mtime": 1793446311.0563142,
-    "ast_hash": "343db851065fac42a52538f6f1137e75",
+    "mtime": 1793447821.3959064,
+    "ast_hash": "4a7cded061a00594b1b232ddac1e79a7",
     "semantic_hash": ""
   },
   ".github/workflows/pages.yml": {
-    "mtime": 1793443844.9500313,
-    "ast_hash": "29ba00bbc13fcb774b280e6c858e4aa7",
+    "mtime": 1793447821.3947172,
+    "ast_hash": "0766868b0012838a7a24151a1b0be103",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1793446342.351115,
-    "ast_hash": "8d686578218dd64e8051b49e60b36353",
+    "mtime": 1793447842.8051555,
+    "ast_hash": "e1ec45abe781210f04f980d1cc3d7298",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1793446260.5439548,
-    "ast_hash": "73acedbaab129d3a1237f7a2e9b7b8bb",
+    "mtime": 1793447821.3942573,
+    "ast_hash": "b8a133487c7695bbb3c7ecb3ca563dd9",
     "semantic_hash": ""
   },
   "profiles.js": {
@@ -25,8 +25,8 @@
     "semantic_hash": ""
   },
   "experience.js": {
-    "mtime": 1793446342.3501656,
-    "ast_hash": "2d5b37ac8d30b0cd1d1659611d90d3aa",
+    "mtime": 1793447821.395515,
+    "ast_hash": "54c4cf7e0f77d39f23ce5722751dfacb",
     "semantic_hash": ""
   },
   "LOW_COST_PLAN.md": {
@@ -35,8 +35,13 @@
     "semantic_hash": ""
   },
   "ROLE_AUDIT.md": {
-    "mtime": 1793446311.4909139,
-    "ast_hash": "23e79b014ae5bd4e8a783d09b3ef2e33",
+    "mtime": 1793447842.8057442,
+    "ast_hash": "5d3b567907f2b9a55de83253f574f04d",
+    "semantic_hash": ""
+  },
+  "deputy.js": {
+    "mtime": 1793447820.996286,
+    "ast_hash": "8dec4729d35836537eea29350de65c60",
     "semantic_hash": ""
   }
 }

@@ -44,6 +44,7 @@ function render(){
  renderModeNavigation();
  document.querySelectorAll('[data-nav]').forEach(a=>a.classList.toggle('active',a.dataset.nav===page));
  if(page==='welcome')return renderDemoWelcome();
+ if(page==='deputy')return renderDeputyDemo();
  if(page==='dashboard')return renderCafeDashboard();
  if(page==='locations')return renderOwnLocations();
  if(page==='location')return renderLocationProfile(route[1],decodeURIComponent(route[2]||''));

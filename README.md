@@ -67,3 +67,10 @@ Run meaningful demo logic checks with `node --test tests/workspaces.test.cjs`.
 
 
 The public landing page and workspace responsibilities are mapped in [ROLE_AUDIT.md](ROLE_AUDIT.md). Shift search is a compact barista tool; all introduction and role-choice content belongs to the public homepage. Legacy cross-role links do not change mode, and record actions are checked against the active persona. Google/calendar preview settings are separated by role.
+
+
+## Deputy demo
+
+Café mode has an optional Deputy simulation accessible from My café. Enable the mock connection, choose one of three fictional unfilled shifts, map it to an owned location, review/edit the details and accept booking/cancellation terms before importing. Source IDs prevent duplicate imports. Imported shifts use the normal FAB invitation/application and confirmation process. The mock rota preview only fills a shift after confirmation and pauses when disconnected. Disconnecting retains existing FAB examples.
+
+The Café tour includes both import and mock rota update steps. This feature makes no network calls to Deputy, requires no credentials and creates no Deputy account, subscription, notification or rota change. A real integration would need backend OAuth, permissions, rate-limit handling, location/employee mappings and conflict-safe sync. The demo does not assert that the real integration or Deputy employee seats would be free.
