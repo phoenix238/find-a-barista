@@ -15,8 +15,8 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1793447821.3942573,
-    "ast_hash": "b8a133487c7695bbb3c7ecb3ca563dd9",
+    "mtime": 1793447908.8226395,
+    "ast_hash": "a99cf9cdbfdda3b15cedc350fd01d06b",
     "semantic_hash": ""
   },
   "profiles.js": {
@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "deputy.js": {
-    "mtime": 1793447820.996286,
-    "ast_hash": "8dec4729d35836537eea29350de65c60",
+    "mtime": 1793447908.8221474,
+    "ast_hash": "bbec74e99553a713897cf3f577240dfa",
     "semantic_hash": ""
   }
 }
