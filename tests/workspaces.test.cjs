@@ -1,0 +1,11 @@
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const vm = require('node:vm');
+const fs = require('node:fs');
+function context(){const c=vm.createContext({Intl,Date,console,document:{addEventListener(){}},state:{mode:'cafe',cafeProfile:{name:'Own business'},baristaProfile:{name:'Me'},profile:null,shifts:[{id:'own',businessId:'mine-cafe',cafe:'Own business'},{id:'other',businessId:'other-company',cafe:'Other café'}],bookings:[{id:'owner',businessId:'mine-cafe',workerId:'b1',shiftId:'own'},{id:'worker',businessId:'other-company',workerId:'mine-barista',shiftId:'other'},{id:'stranger',businessId:'other-company',workerId:'b2',shiftId:'other'}]},getShift(id){return this.state.shifts.find(s=>s.id===id);}});vm.runInContext(fs.readFileSync('experience.js','utf8'),c);return c;}
+test('experience rolls over by month and year in London',()=>{const c=context();assert.equal(vm.runInContext("experienceMonths('2023-11',new Date('2026-10-31T12:00:00Z'))",c),35);assert.equal(vm.runInContext("experienceYears('2023-11',new Date('2026-11-01T12:00:00Z'))",c),3);assert.equal(vm.runInContext("experienceMonths('2026-10',new Date('2026-10-31T23:59:59Z'))",c),0);});
+test('experience handles invalid months and future starts',()=>{const c=context();for(const value of ['2026-99','bad','2099-01'])assert.equal(vm.runInContext(`experienceMonths('${value}',new Date('2026-10-31T12:00:00Z'))`,c),0);});
+test('café sees its own business bookings, not other cafés',()=>{const c=context();assert.deepEqual(Array.from(vm.runInContext('visibleBookings().map(b=>b.id)',c)),['owner']);});
+test('barista sees only their own work, not café applicants',()=>{const c=context();vm.runInContext("state.mode='barista'",c);assert.deepEqual(Array.from(vm.runInContext('visibleBookings().map(b=>b.id)',c)),['worker']);});
+test('invitations can only select this business’s posted shifts',()=>{const c=context();assert.deepEqual(Array.from(vm.runInContext('ownCafeShifts().map(s=>s.id)',c)),['own']);});
+test('existing booking records remain after café is hidden',()=>{const c=context();vm.runInContext("state.blocked=['Own business']",c);assert.equal(vm.runInContext('visibleBookings().length',c),1);});

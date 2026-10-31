@@ -46,8 +46,21 @@ Distance-from-place search, availability calendars and production background aut
 
 ## Community
 
-Be kind, be honest, turn up when you commit, and pay people when you owe them. Raise ideas and feedback in GitHub Issues. No booking fees in this demo. Future infrastructure costs and any proposed café contributions should be published transparently before charges are introduced.
+Be kind, be honest, turn up when you commit, and pay people when you owe them. Tester feedback and early interest are collected through the private-response Google Form linked from the website. GitHub Issues are for public code contributions, not private user feedback. No booking fees in this demo. Future infrastructure costs and any proposed café contributions should be published transparently before charges are introduced.
 
 ## Licence
 
 AGPL-3.0-or-later. See [LICENSE](LICENSE). Code is open source; this does not grant permission to disclose users' personal information. External fonts are loaded from Google Fonts and are subject to their own licences.
+
+
+## Reviewer release
+
+The main menu is separated by role. Baristas see Find a shift, My bookings and Permanent jobs, plus their profile. Cafés see My café (their own business dashboard), Find baristas and Bookings. Café mode has no directory of other café owners. All branch profiles link back to the main business workspace. Mode routing is only a demo UI boundary, not production authorization.
+
+Each new browser gets fictional role-specific profiles, shifts and applications to explore. Existing demo profiles and records are retained and migrated. Legacy numeric experience is converted to an estimated start month with a prompt to correct it. Experience is recalculated by calendar month in Europe/London. Specialist equipment is optional. Location IDs remain stable across edits.
+
+The booking manager separates requests/invitations from confirmation, hours, invoices and payment. Manual café approval requires explicit acceptance of terms. Baristas can use a clearly labelled demo helper to simulate the other café approving their own application. No requests are sent to real people. Role-specific tours are available in the mode bar and footer.
+
+Feedback is the one live collection: an external Google Form, configured for anyone with the link, no automatic email collection, no one-response sign-in restriction and no response-summary sharing. The optional email question is separate from the contact choice. Owner response-email notifications are off. The form owner should access the Responses tab in Google Forms to review feedback. No form responses, interest emails, Google credentials or tokens are stored in this public repository.
+
+Run meaningful demo logic checks with `node --test tests/workspaces.test.cjs`.
